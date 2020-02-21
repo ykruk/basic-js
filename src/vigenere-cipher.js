@@ -32,7 +32,6 @@ class VigenereCipheringMachine {
         if (!encryptedMessage || !key) throw new Error('Parameter has not been given.');
         const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
         let message = '';
-        
         key = key.toUpperCase();
         let other = 0;
         for (let i = 0; i < encryptedMessage.length; i++) {
